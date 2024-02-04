@@ -1,0 +1,18 @@
+Admin component
+
+<table class="table table-striped" *ngIf="data">
+  <tr>
+    <th>User code</th>
+    <th>Yes click</th>
+    <th>No click</th>
+    <th>Last updated</th>
+  </tr>
+  <tbody>
+    <tr *ngFor="let user of data | keyvalue">
+      <td>{{ user.key }}</td>
+      <td>{{ $any(user?.value).yesCount || 'NA'}}</td>
+      <td>{{ $any(user?.value).noCount || 'NA'}}</td>
+      <td>{{ ($any(user?.value).lastUpdated | date) || 'NA'}}</td>
+    </tr>
+  </tbody>
+</table>

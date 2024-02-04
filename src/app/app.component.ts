@@ -19,7 +19,8 @@ export class AppComponent implements OnInit {
       storageBucket: "standalone-apps-1998.appspot.com",
       messagingSenderId: "259467626106",
       appId: "1:259467626106:web:ad5b191f30f1a300ccddc3",
-      measurementId: "G-7KTJ6BDHJF"
+      measurementId: "G-7KTJ6BDHJF",
+      databaseURL: "https://standalone-apps-1998-default-rtdb.asia-southeast1.firebasedatabase.app"
     };
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
