@@ -1,0 +1,36 @@
+// .page-container {
+//     height: 100vh;
+//     width: 100vw;
+//     //   background-repeat: no-repeat;
+//       background-size: cover;
+//     //   background-position: center;
+//     //   color: white;
+//     //   background-image: url("./../../../assets/feb/star-sky.jpg");
+//     background: linear-gradient(to right, #edc7b7 0%, #eee2dc 100%);
+//     color: #05386b;
+//   }
+
+// .display-hidden {
+//     opacity: 0;
+// }
+
+@keyframes moveStars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000px 1000px; /* Adjust the values as needed */
+  }
+}
+
+.page-container {
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-size: 24px;
+  background-color:  #4c408e; /* Change to desired background color */
+  background-image: url("./../../../assets/pngfind.com-white-stars-png-296951.png"); /* Replace 'path_to_your_star_image.jpg' with the path to your star image */
+  background-repeat: repeat;
+  animation: moveStars 70s linear infinite; /* Adjust the duration (20s) as needed */
+  
+}
